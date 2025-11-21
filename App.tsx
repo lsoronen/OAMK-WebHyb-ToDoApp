@@ -13,7 +13,7 @@ const STORAGE_KEY = 'TASK_LIST_ITEMS';
 
 export default function App() {
     const [items, setItems] = useState<Item[]>([]);
-    const [input, setInput] = useState('');
+    const [input, setInput] = useState<string>('');
 
     useEffect(() => {
         (async () => {
